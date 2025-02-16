@@ -1,0 +1,276 @@
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: hsl(212, 97%, 12%);
+    color: rgb(232, 232, 232);
+    margin-top: -2.5em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    height: 16em;
+    text-align: center;
+}
+header img{
+    position: relative;
+    top: 4.8em;
+    left: 11em;
+    height: 6.8em;
+    width: auto;
+    float: left;
+    z-index: 999;
+}
+header h1{
+    position: relative;
+    right: 0em;
+    top: 1.1em;
+    margin-bottom: -0.3em;
+    font-size: 3.5em;
+}
+header h2{
+    position: relative;
+    margin-top: 3em;
+    margin-left: 11.8em;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+    header img{
+        left: 8em;
+    }
+}
+@media screen and (max-width : 800px) {
+    header{
+        height: 25em;
+    }
+    header img{
+        position: absolute;
+        float: none;
+        margin-top: 7.7em;
+        left: 38.5%;
+        height: 8em;
+    }
+    header h1{
+        text-align: center;
+        margin-top: -0.8em;
+        font-size: 4.5em;
+    }
+    header h2{
+        margin-left: unset;
+        text-align: center;
+        margin-top: 2.7em;
+        font-size: 2.5em;
+    }
+}
+
+.selfie img{
+    max-width: 20em;
+    position: absolute;
+    border-radius: 100em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+
+.oi {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap; 
+}
+.ka{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -7em;
+}
+
+.omMig, .intressen {
+    width: 45%;
+    text-align: center;
+}
+
+.kunskaperSkolan, .arbetatMed {
+    width: 45%;
+    text-align: center;
+}
+
+.omMig{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
+}
+.omMig h1{
+    position: relative;
+    top: -7em;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px hsl(0, 0%, 0%);
+    color: rgb(255, 255, 255);
+}
+.omMig a p{
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: black; 
+    background-color: white;
+    max-width: 10em;
+    border-radius: 100em;
+    padding: 1em;
+    text-shadow: none;
+    position: relative;
+    top: -12em;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+.omMig a p:hover{
+    opacity: 80%;
+    transition: 0.3s;
+}
+.omMig img{
+    margin-left: 60%;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 1em;
+    width: 25em;
+    max-height: 17em;
+    margin-top: 1em;
+}
+
+.intressen{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
+}
+.intressen h1{
+    position: relative;
+    top: -7em;
+    left: 11.8em;
+    text-shadow: 0px 0px 6px black;
+    color: white;
+    transform: translate(-50%, -50%);}
+.intressen a p{
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: black; 
+    background-color: white;
+    border-radius: 100em;
+    padding: 1em;
+    max-width: 10em;
+    text-shadow: none;
+    position: relative;
+    top: -12em;
+    left: 29em;
+    transform: translate(-50%, -50%);
+}
+.intressen a p:hover{
+    opacity: 80%;
+    transition: 0.3s;
+}
+.intressen img{
+    margin-left: 31.5%;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width: 25em;
+    height: 17em;
+    margin-top: 1em;
+}
+
+.kurserSkolan{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
+}
+.kurserSkolan h1{
+    position: relative;
+    top: -6.5em;
+    left: 15em;
+    text-shadow: 0px 0px 7px black;
+    color: white;
+    text-align: center;
+    max-width: 10em;
+    transform: translate(-50%, -50%);
+}
+.kurserSkolan a p{
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: black; 
+    background-color: white;
+    border-radius: 100em;
+    padding: 1em;
+    max-width: 7em;
+    text-align: center;
+    text-shadow: none;
+    position: relative;
+    top: -15em;
+    left: 106%;
+}
+.kurserSkolan a p:hover{
+    opacity: 80%;
+    transition: 0.3s;
+}
+.kurserSkolan img{
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width: 25em;
+    max-height: 17em;
+    margin-left: 72%;
+}
+
+.arbetatMed{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
+}
+.arbetatMed h1{
+    position: relative;
+    top: -6.8em;
+    left: 13em;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+.arbetatMed a p{
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: black; 
+    background-color: white;
+    border-radius: 100em;
+    padding: 1em;
+    text-shadow: none;
+    position: absolute;
+    top: 15.6em;
+    left: 31.5em;
+    transform: translate(-50%, -50%);
+}
+.arbetatMed a p:hover{
+    opacity: 80%;
+    transition: 0.3s;
+}
+.arbetatMed img{
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: 25em;
+    height: 17em;
+    margin-left: 40.5%;
+}
+footer{
+    background-color: hsl(212, 97%, 12%);
+    height: 10em;
+    margin-top: -10em;
+    margin-bottom: -1em;
+    margin-left: -1em;
+    margin-right: -1em;
+    color: white;
+}
+footer p{
+    margin-left: 2em;
+    padding-bottom: 1em;
+}
+footer a{
+    margin-left: 2em;
+    color: white;
+}
+.webbansvarig{
+    padding-top: 1.2em;
+}
